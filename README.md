@@ -2,7 +2,7 @@
 
 Welcome to my personal developer portfolio! This website showcases my technical skills, academic background, and the production-grade projects I have built. It is designed to be highly responsive, modern, and visually striking.
 
-🔗 **Live Demo:** [https://aditya1791.github.io/Full-Stack-Portfolio/](https://aditya1791.github.io/Full-Stack-Portfolio/) (or your custom hosting URL)
+🔗 **Live Demo:** [https://aditya1791.github.io/Full-Stack-Portfolio/](https://aditya1791.github.io/Full-Stack-Portfolio/)
 
 ---
 
