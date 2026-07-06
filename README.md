@@ -1,77 +1,100 @@
-# Aditya Ranjan Swain — Full-Stack Developer Portfolio
+# 🌌 Aditya Ranjan Swain | Full-Stack Developer Portfolio
 
-Welcome to my personal developer portfolio! This website showcases my technical skills, academic background, and the production-grade projects I have built. It is designed to be highly responsive, modern, and visually striking.
+<div align="center">
+  
+  [![Website Status](https://img.shields.io/website?url=https%3A%2F%2Faditya1791.github.io%2FFull-Stack-Portfolio%2F&logo=github&style=flat-square)](https://aditya1791.github.io/Full-Stack-Portfolio/)
+  [![GitHub License](https://img.shields.io/github/license/Aditya1791/Full-Stack-Portfolio?style=flat-square)](LICENSE)
+  [![Git Commit](https://img.shields.io/github/last-commit/Aditya1791/Full-Stack-Portfolio?style=flat-square)](https://github.com/Aditya1791/Full-Stack-Portfolio/commits/main)
+  [![Tech Stack](https://img.shields.io/badge/Tech%20Stack-Vanilla%20JS%20%7C%20CSS%20%7C%20HTML-blue?style=flat-square)](#-technical-stack--skills)
 
-🔗 **Live Demo:** [https://aditya1791.github.io/Full-Stack-Portfolio/](https://aditya1791.github.io/Full-Stack-Portfolio/)
+  **A premium, high-performance developer portfolio showcasing production-grade full-stack applications, computer vision integrations, and clean interactive UX.**
+
+  ### 🔗 [View Live Portfolio](https://aditya1791.github.io/Full-Stack-Portfolio/)
+</div>
 
 ---
 
 ## 🚀 About the Website
 
-This portfolio is built using **Vanilla HTML, CSS, and JavaScript** for maximum performance and load speed, implementing modern design systems and premium aesthetics:
-- **Interactive Cursor Glow**: A custom radial-gradient background glow that follows the mouse cursor.
-- **Mock Bash Terminal**: A dynamic, animated shell simulator typing out commands and status updates about my development environment.
-- **Glassmorphism & Neon accents**: Curated color scheme utilizing deep dark space blues, neon teal accents, and soft glow borders.
-- **Scroll Animations**: Smooth fade-in and slide-up transitions using the browser's native `IntersectionObserver` API.
+Designed to showcase professional developer skills and high-impact projects, this portfolio is built using **Vanilla HTML, CSS3, and ES6+ JavaScript** to achieve near-instant load speeds, a perfect Lighthouse score, and fluid animations without bulky framework overhead.
+
+### 🌟 Key Design & Interactive Features
+*   **✨ Interactive Cursor Glow:** A dynamic, physics-guided radial-gradient backdrop spotlight that tracks and adapts to user mouse movements.
+*   **💻 Animated Bash Terminal Simulator:** An interactive shell built from scratch that type-simulates environment boot logs, system diagnostic status, and developer details.
+*   **🧪 Neon Glassmorphism:** A tailored, sophisticated dark theme featuring deep space blues, vibrant cyan/neon-teal accents, and soft translucent-bordered cards.
+*   **🛰️ Scroll-Triggered Micro-Animations:** Uses the native browser `IntersectionObserver` API for smooth, performance-optimized fade-ins and scale-ups as you navigate.
 
 ---
 
 ## 🛠️ Technical Stack & Skills
 
-Here is a summary of the technical expertise highlighted in this portfolio:
-*   **Frontend**: React.js, Redux Toolkit, JavaScript (ES6+), CSS3, HTML5, Bootstrap 5, Chart.js.
-*   **Backend**: Node.js, Express.js, Python, Flask, RESTful APIs, WebSockets (Socket.io), JWT Auth, Role-Based Access Control (RBAC).
-*   **Databases**: MongoDB (Mongoose ODM), MySQL, Firebase.
-*   **AI/ML Integration**: DeepFace, OpenCV, Dlib, Computer Vision.
-*   **DevOps & Tools**: Git, GitHub, Docker, Docker Compose, Postman, Stripe API.
+This portfolio highlights my end-to-end expertise across the modern full-stack ecosystem:
+
+| Layer | Technologies & Tools |
+| :--- | :--- |
+| **Frontend** | ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![Bootstrap 5](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white) |
+| **Backend** | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) ![WebSockets](https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socketdotio&logoColor=white) `REST APIs` `JWT Auth` `RBAC` |
+| **Databases** | ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black) |
+| **AI / ML** | ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) `DeepFace` `Dlib` `Computer Vision` |
+| **DevOps / Core** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white) `Stripe API` |
 
 ---
 
 ## 📂 Featured Projects Showcase
 
-The portfolio showcases three core production-ready applications:
+The core focus of my work centers around solving complex, real-world problems with robust software architectures:
 
-1.  **Smart AI-Based Proctoring System**
-    *   *Description*: A full-stack online examination platform featuring real-time eye/gaze tracking, face detection, absence detection, biometric identity verification (DeepFace), Stripe payments, and a multi-language compiler supporting 15+ languages.
-    *   *Tech*: Python, Flask, MySQL, DeepFace, OpenCV, Dlib, Bootstrap, Stripe API, Docker.
-2.  **Collaborative Project Management Workspace**
-    *   *Description*: A Trello-like multi-user real-time workspace with drag-and-drop mechanics, optimistic UI updates for instant feedback, a background MongoDB audit trail, and JWT-secured RBAC permissions.
-    *   *Tech*: React.js, Redux Toolkit, Node.js, Express.js, MongoDB, Socket.io, @hello-pangea/dnd.
-3.  **Advanced Remote Examination & Assessment Portal**
-    *   *Description*: An exam portal structured with three scoped portals (Admin, Teacher, Student). Features focus-blur/tab-switch detection logging to MongoDB and interactive analytical charts for teachers.
-    *   *Tech*: React.js, Redux Toolkit, Node.js, Express.js, MongoDB, Mongoose, Chart.js, JWT.
+### 1. 👁️ Smart AI-Based Proctoring System
+A production-grade, secure examination platform designed to minimize academic misconduct through real-time telemetry.
+*   **Key Features:** Gaze and eye-movement tracking, facial presence check, biometric verification on entry, integrated multi-language online code compiler (supporting 15+ languages), and Stripe-secured premium access.
+*   **Technology Stack:** Python, Flask, MySQL, DeepFace, OpenCV, Dlib, Bootstrap, Stripe API, Docker.
+
+### 2. 🤝 Collaborative Project Management Workspace
+A real-time workspace modeled on Agile boards (Trello style) for concurrent user collaboration.
+*   **Key Features:** Dynamic drag-and-drop boards with optimistic state updates, real-time socket syncing across active sessions, custom background MongoDB audit logging, and strict role-based access control (RBAC).
+*   **Technology Stack:** React.js, Redux Toolkit, Node.js, Express.js, MongoDB, Socket.io, `@hello-pangea/dnd`.
+
+### 3. 📝 Advanced Remote Examination & Assessment Portal
+An end-to-end evaluation portal for academic institutions structured with scoped dashboards.
+*   **Key Features:** Scoped user experiences for Admins, Teachers, and Students. Incorporates active tab-switch/focus-blur logging to prevent exam cheating, along with interactive performance analytics using Chart.js.
+*   **Technology Stack:** React.js, Redux Toolkit, Node.js, Express.js, MongoDB, Mongoose, Chart.js, JWT.
 
 ---
 
 ## 💻 Local Setup & Execution
 
-You can run this portfolio locally in just a few steps:
-
 ### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+Make sure you have [Node.js](https://nodejs.org/) installed to run a local development server.
 
-### Instructions
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/Aditya1791/Full-Stack-Portfolio.git
-    cd Full-Stack-Portfolio
-    ```
+### Run Locally
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Aditya1791/Full-Stack-Portfolio.git
+   cd Full-Stack-Portfolio
+   ```
 
-2.  **Run the local server:**
-    Using `npx http-server` (or any other HTTP server tool):
-    ```bash
-    npx http-server -p 8080
-    ```
+2. **Spin up a local web server:**
+   You can use the built-in `npx http-server` utility to instantly run the project locally:
+   ```bash
+   npx http-server -p 8080
+   ```
 
-3.  **View the page:**
-    Open your browser and navigate to `http://localhost:8080`.
+3. **Open the browser:**
+   Go to [http://localhost:8080](http://localhost:8080) to view your local copy.
 
 ---
 
-## 📬 Contact Info
+## 📬 Connect With Me
 
-Let's connect or discuss opportunities:
-- **Email**: [swainaditya85@gmail.com](mailto:swainaditya85@gmail.com)
-- **LinkedIn**: [linkedin.com/in/aditya-ranjan-swain](https://linkedin.com/in/aditya-ranjan-swain)
-- **GitHub**: [github.com/Aditya1791](https://github.com/Aditya1791)
-- **Phone**: +91 78468 87605
+If you'd like to collaborate, discuss open roles, or just chat tech, feel free to reach out!
+
+<div align="center">
+
+| Channel | Contact Info |
+| :--- | :--- |
+| **📧 Email** | [swainaditya85@gmail.com](mailto:swainaditya85@gmail.com) |
+| **💼 LinkedIn** | [linkedin.com/in/aditya-ranjan-swain](https://linkedin.com/in/aditya-ranjan-swain) |
+| **🐙 GitHub** | [github.com/Aditya1791](https://github.com/Aditya1791) |
+| **📞 Mobile** | +91 78468 87605 |
+
+</div>

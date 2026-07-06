@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aditya Ranjan Swain — Full-Stack Developer</title>
   <script>
-    (function() {
+    (function () {
       const storedTheme = localStorage.getItem('theme');
       const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
       const theme = storedTheme || (systemPrefersLight ? 'light' : 'dark');
@@ -91,7 +91,18 @@
     }
 
     /* Smooth transitions for theme switching */
-    body, section, nav, .stat-card, .skill-category, .project-card, .contact-link-item, .form-input, .form-textarea, footer, a, button {
+    body,
+    section,
+    nav,
+    .stat-card,
+    .skill-category,
+    .project-card,
+    .contact-link-item,
+    .form-input,
+    .form-textarea,
+    footer,
+    a,
+    button {
       transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
     }
 
@@ -217,13 +228,15 @@
     [data-theme="light"] .theme-toggle .sun-icon {
       display: none;
     }
+
     [data-theme="light"] .theme-toggle .moon-icon {
       display: block;
     }
-    
+
     .theme-toggle .sun-icon {
       display: block;
     }
+
     .theme-toggle .moon-icon {
       display: none;
     }
@@ -1179,11 +1192,14 @@
     <div class="nav-actions">
       <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
         <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18">
-          <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
-          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2" />
+          <path
+            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
         </svg>
         <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linejoin="round" />
         </svg>
       </button>
       <a href="#contact" class="nav-cta">hire me →</a>
@@ -1237,7 +1253,8 @@
         <div class="about-text fade-in">
           <p>
             I'm a <strong>Computer Science & Engineering graduate</strong> from Trident Academy of Technology,
-            Bhubaneswar, having graduated on 13th May 2026. While most people my age are still learning the basics, I've already
+            Bhubaneswar, having graduated on 13th May 2026. While most people my age are still learning the basics, I've
+            already
             shipped three production-grade applications that solve real problems.
           </p>
           <p>
@@ -1467,8 +1484,9 @@
             </div>
           </div>
           <div class="project-links">
-            <a href="YOUR_GITHUB_LINK_HERE" class="project-link" target="_blank">⌥ GitHub Repo</a>
-            <a href="YOUR_LIVE_LINK_HERE" class="project-link live" target="_blank">↗ Live Demo</a>
+            <a href="https://github.com/Aditya1791/Collab-SYNC
+" class="project-link" target="_blank">⌥ GitHub Repo</a>
+            <a href="https://collab-sync-demo.onrender.com/" class="project-link live" target="_blank">↗ Live Demo</a>
           </div>
         </div>
 
