@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aditya Ranjan Swain — Full-Stack Developer</title>
+  <script>
+    (function() {
+      const storedTheme = localStorage.getItem('theme');
+      const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+      const theme = storedTheme || (systemPrefersLight ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
   <link rel="icon" type="image/jpeg" href="Passport Size.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
@@ -31,9 +39,43 @@
       --muted: #6B7A99;
       --glow: rgba(79, 142, 247, 0.12);
       --glow-accent: rgba(0, 229, 204, 0.10);
+      --grid-color: rgba(79, 142, 247, 0.03);
+      --cursor-glow-color: rgba(79, 142, 247, 0.06);
+      --nav-bg: rgba(5, 10, 20, 0.8);
+      --tag-bg: rgba(79, 142, 247, 0.08);
+      --tag-border: rgba(79, 142, 247, 0.15);
+      --tag-accent-bg: rgba(0, 229, 204, 0.08);
+      --tag-accent-border: rgba(0, 229, 204, 0.2);
+      --tag-purple-bg: rgba(124, 92, 252, 0.08);
+      --tag-purple-border: rgba(124, 92, 252, 0.2);
+      --tag-purple-text: #9B7DFF;
       --font-display: 'Space Grotesk', sans-serif;
       --font-body: 'Inter', sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    [data-theme="light"] {
+      --bg: #F5F7FA;
+      --surface: #FFFFFF;
+      --surface2: #E8EDF5;
+      --border: #D2DCE6;
+      --primary: #1A56DB;
+      --accent: #0D9488;
+      --accent2: #6B46C1;
+      --text: #1E293B;
+      --muted: #475569;
+      --glow: rgba(26, 86, 219, 0.08);
+      --glow-accent: rgba(13, 148, 136, 0.06);
+      --grid-color: rgba(26, 86, 219, 0.03);
+      --cursor-glow-color: rgba(26, 86, 219, 0.05);
+      --nav-bg: rgba(245, 247, 250, 0.85);
+      --tag-bg: rgba(26, 86, 219, 0.06);
+      --tag-border: rgba(26, 86, 219, 0.12);
+      --tag-accent-bg: rgba(13, 148, 136, 0.06);
+      --tag-accent-border: rgba(13, 148, 136, 0.12);
+      --tag-purple-bg: rgba(107, 70, 193, 0.06);
+      --tag-purple-border: rgba(107, 70, 193, 0.12);
+      --tag-purple-text: #6B46C1;
     }
 
     html {
@@ -48,13 +90,18 @@
       overflow-x: hidden;
     }
 
+    /* Smooth transitions for theme switching */
+    body, section, nav, .stat-card, .skill-category, .project-card, .contact-link-item, .form-input, .form-textarea, footer, a, button {
+      transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    }
+
     /* ── CURSOR GLOW ── */
     .cursor-glow {
       position: fixed;
       width: 400px;
       height: 400px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(79, 142, 247, 0.06) 0%, transparent 70%);
+      background: radial-gradient(circle, var(--cursor-glow-color) 0%, transparent 70%);
       pointer-events: none;
       transform: translate(-50%, -50%);
       z-index: 0;
@@ -67,8 +114,8 @@
       position: fixed;
       inset: 0;
       background-image:
-        linear-gradient(rgba(79, 142, 247, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(79, 142, 247, 0.03) 1px, transparent 1px);
+        linear-gradient(var(--grid-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
       background-size: 60px 60px;
       z-index: 0;
       pointer-events: none;
@@ -88,7 +135,7 @@
       justify-content: space-between;
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      background: rgba(5, 10, 20, 0.8);
+      background: var(--nav-bg);
       border-bottom: 1px solid rgba(79, 142, 247, 0.08);
     }
 
@@ -138,6 +185,47 @@
     .nav-cta:hover {
       background: var(--accent);
       color: var(--bg);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .theme-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      cursor: pointer;
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: rgba(79, 142, 247, 0.05);
+    }
+
+    /* Hide sun/moon based on theme */
+    [data-theme="light"] .theme-toggle .sun-icon {
+      display: none;
+    }
+    [data-theme="light"] .theme-toggle .moon-icon {
+      display: block;
+    }
+    
+    .theme-toggle .sun-icon {
+      display: block;
+    }
+    .theme-toggle .moon-icon {
+      display: none;
     }
 
     /* ── HERO ── */
@@ -498,7 +586,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at 30% 30%, rgba(79, 142, 247, 0.15), transparent 60%);
+      background: radial-gradient(circle at 30% 30%, var(--glow), transparent 60%);
     }
 
     .avatar-box img {
@@ -596,28 +684,27 @@
     .skill-tag {
       font-family: var(--font-mono);
       font-size: 0.72rem;
-      background: rgba(79, 142, 247, 0.08);
-      border: 1px solid rgba(79, 142, 247, 0.15);
+      background: var(--tag-bg);
+      border: 1px solid var(--tag-border);
       color: var(--primary);
       padding: 0.25rem 0.65rem;
       border-radius: 4px;
-      transition: all 0.2s;
     }
 
     .skill-tag:hover {
-      background: rgba(79, 142, 247, 0.2);
+      background: var(--tag-border);
     }
 
     .skill-tag.accent-tag {
-      background: rgba(0, 229, 204, 0.08);
-      border-color: rgba(0, 229, 204, 0.2);
+      background: var(--tag-accent-bg);
+      border-color: var(--tag-accent-border);
       color: var(--accent);
     }
 
     .skill-tag.purple-tag {
-      background: rgba(124, 92, 252, 0.08);
-      border-color: rgba(124, 92, 252, 0.2);
-      color: #9B7DFF;
+      background: var(--tag-purple-bg);
+      border-color: var(--tag-purple-border);
+      color: var(--tag-purple-text);
     }
 
     /* ── PROJECTS ── */
@@ -649,7 +736,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(79, 142, 247, 0.05), transparent 60%);
+      background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), var(--cursor-glow-color), transparent 60%);
       opacity: 0;
       transition: opacity 0.3s;
       pointer-events: none;
@@ -1089,7 +1176,18 @@
       <li><a href="#education">education</a></li>
       <li><a href="#contact">contact</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">hire me →</a>
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18">
+          <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <a href="#contact" class="nav-cta">hire me →</a>
+    </div>
   </nav>
 
   <!-- HERO -->
@@ -1516,6 +1614,15 @@
   </footer>
 
   <script>
+    // ── THEME TOGGLE ──
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
     // ── CURSOR GLOW ──
     const glow = document.getElementById('cursorGlow');
     document.addEventListener('mousemove', e => {
